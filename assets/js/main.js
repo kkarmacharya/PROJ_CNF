@@ -1033,7 +1033,7 @@ CSS TABLE OF CONTENTS
                 speed: 1500,
                 loop: true,
                 autoplay: {
-                    delay: 7000,
+                    delay: 2000,
                     disableOnInteraction: false,
                 },
                 pagination: false,
