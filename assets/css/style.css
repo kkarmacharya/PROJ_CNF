@@ -47,7 +47,9 @@
     --section-title-space: 70px;
     --ripple-ani-duration: 5s
 }
-
+.service-content-wrap .title-area .title-wrap h2, .testi-content-wrap .title-area h2{
+    color: var(--white-color) !important;
+}
 .p-top-left {
     position: absolute;
     top: 0;
