@@ -3336,7 +3336,7 @@ textarea.is-invalid {
     position: relative;
     overflow: hidden;
     display: block;
-    height: 26px;
+    height: 36px;
     line-height: 1.66
 }
 
@@ -7120,7 +7120,10 @@ a.text-theme:hover,
 .widget_nav_menu .sub-menu {
     margin-left: 10px
 }
-
+.navigation .language a img {
+    width: 20px;
+    margin-right: 8px;
+}
 .footer-widget {
     margin-left: 50px
 }
@@ -7873,6 +7876,7 @@ a.text-theme:hover,
 }
 .header-logo img {
     width: 60px;
+    padding: 2px;
 }
 @media(max-width: 991px) {
     .menu-area .header-logo a:first-child {
@@ -7930,7 +7934,7 @@ a.text-theme:hover,
 }
 
 .main-menu>ul>li>a {
-    padding: 32px 0;
+    padding: 12px 0;
     padding-right: 18px;
     text-transform: capitalize
 }
@@ -8589,7 +8593,8 @@ a.text-theme:hover,
 }
 
 .header-style3 .main-wrapper .nav-menu {
-    flex: 0 0 auto
+    flex: 0 0 auto;
+    display: flex;
 }
 
 .header-style3 .main-wrapper .nav-menu .main-menu>ul>li {
@@ -8688,7 +8693,7 @@ a.text-theme:hover,
 }
 
 .header-style3 .main-wrapper .header-right-wrapper .header-right .theme-btn {
-    padding: 13px 40px
+    padding: 7px 30px
 }
 
 .header-style3 .header-sticky .main-wrapper {
@@ -9035,7 +9040,7 @@ a.text-theme:hover,
 }
 
 .footer-section .footer-social .social-link {
-    font-size: 16px;
+    font-size: 26px;
     line-height: 1.66;
     color: var(--white-color);
     font-weight: 500;
@@ -10934,11 +10939,13 @@ a.text-theme:hover,
     -webkit-transition: .3s stroke, .3s stroke-width, .3s fill;
     -o-transition: .3s stroke, .3s stroke-width, .3s fill;
     transition: .3s stroke, .3s stroke-width, .3s fill;
-    font-size: 26px;
+    font-size: 36px;
     font-weight: 600;
     font-family: var(--title-font)
 }
-
+.page-title h2 {
+    color: #ffffff;
+}
 @media(max-width: 430px) {
     .about-right-wrap {
         flex: 1
@@ -13876,7 +13883,7 @@ a.text-theme:hover,
 
 .social-links a {
     display: inline-block;
-    font-size: 16px;
+    font-size: 26px;
     font-weight: 500;
     color: var(--dark-color);
     margin-right: 40px
@@ -15853,7 +15860,7 @@ a.text-theme:hover,
     color: var(--dark-color);
     font-size: 16px;
     font-weight: 500;
-    padding: 0 16px;
+    padding: 0 10px;
     height: 38px;
     line-height: 37px;
     border-radius: 19px;
@@ -17872,7 +17879,7 @@ a.text-theme:hover,
     border-radius: 10px
 }
 
-.project-sidebar .widget-box.project-details-box .title {
+.project-sidebar .widget-box.project-details-box .title, .project-sidebar .widget-box.project-details-box h4  {
     font-size: 22px;
     color: var(--white-color);
     font-weight: 500;
