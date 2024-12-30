@@ -3338,7 +3338,7 @@ textarea.is-invalid {
     position: relative;
     overflow: hidden;
     display: block;
-    height: 36px;
+    height: 26px;
     line-height: 1.66
 }
 
@@ -3669,7 +3669,7 @@ body.bg-title .scroll-top::after {
 }
 
 .sec-title {
-    font-size: 42px;
+    font-size: 38px;
     line-height: 1.18;
     margin-bottom: 20px;
     margin-top: -0.18em;
@@ -7817,7 +7817,9 @@ a.text-theme:hover,
     right: 0;
     z-index: 41
 }
-
+.header-right img {
+    max-width: 50px;
+}
 .sticky-wrapper {
     transition: .4s ease-in-out;
     will-change: transform, opacity
@@ -11487,14 +11489,14 @@ a.text-theme:hover,
 }
 
 .brands-slider .brand-item a:hover {
-    filter: brightness(0)
+    filter: brightness(0.5)
 }
 
 .brands-slider .brand-item img {
     display: inline-block;
-    max-width: 120px;
-    width: auto;
-    height: auto;
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
@@ -11505,7 +11507,9 @@ a.text-theme:hover,
     -o-transition: all 500ms ease;
     transition: all 500ms ease
 }
-
+.brands-slider .brand-item span{
+    font-size: 12px;
+}
 .brands-slider .brand--item {
     text-align: center
 }
@@ -11557,8 +11561,23 @@ a.text-theme:hover,
 .service-btn-wrapper .service-btn a:hover {
     background-size: 0 1px
 }
-
-.service-single-box {
+.donation-box {
+    background-color: var(--dark-color);
+    transition: background-color .4s ease-in-out;
+    color: var(--white-color);
+}
+.donation-box:hover {
+    background-color: var(--theme-color3);
+}
+.donation-box h2{
+    color: var(--white-color);
+    font-size: 28px;
+}
+.donation-box img {
+    width: 100%;
+    margin-top: 10px;
+}
+.service-single-box, .donation-box {
     padding: 50px 40px 50px;
     border-radius: 10px;
     position: relative;
@@ -11743,7 +11762,8 @@ a.text-theme:hover,
 
 .service-section.style-2 .service-single-box {
     background-color: var(--theme-color3);
-    transition: background-color .4s ease-in-out
+    transition: background-color .4s ease-in-out;
+    height: 100%;
 }
 
 .service-section.style-2 .service-single-box:hover {
@@ -13627,8 +13647,11 @@ a.text-theme:hover,
 
 .appointment-form form .theme-btn.bg-dark {
     width: 100%
+    max-width: 200px;
 }
-
+.contact-btn a {
+    min-width: 200px;
+}
 @media(max-width: 991px) {
     .contact-content-wrap {
         margin-top: 35px
@@ -14699,7 +14722,7 @@ a.text-theme:hover,
     width: 36px;
     height: 36px;
     object-fit: cover;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     margin-right: 10px;
     flex-shrink: 0
 }
